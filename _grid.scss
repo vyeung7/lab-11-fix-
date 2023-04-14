@@ -1,16 +1,15 @@
-$bgcol:rgb(192, 101, 101);
+$bgcol:linen;
 $textColor: darkseagreen;
-
 
 .grid-container{
     display: grid;
     gap: 10px;
-    background-color: blue;
+    background-color: $bgcol;
     padding:10px;
 }
 
 .grid-item{
-    background-color: linen;
+    background-color: $bgcol;
     text-align: center;
     padding: 20px;
     font-size: 30px;   
@@ -46,6 +45,7 @@ $textColor: darkseagreen;
     grid-row: 3;
 }
 
+@media screen and (max-width: 800px){
 //grid 1 col
 .grid{
     display: grid;
@@ -53,17 +53,19 @@ $textColor: darkseagreen;
     background-color: $bgcol;
     padding: 10px;
     grid-gap: 10px;
-}
+}}
 
+@media screen and (max-width: 801px){
 //grid 2 col
 .grid{
     display: grid;
     grid-template-columns: auto auto;
-    background-color: $bgcol + $gridColor;
+    background-color: $bgcol + black;
     padding: 10px;
     grid-gap: 10px;
-}
+}}
 
+@media screen and (max-width: 1001px){
 //grid 3 col
 .grid{
     display: grid;
@@ -71,12 +73,12 @@ $textColor: darkseagreen;
     background-color: $bgcol + black;
     padding: 10px;
     grid-gap: 10px;
-}
+}}
 
 //grid item format
 .grid-item{
     background-color: white;
-    border: 4px solid $gridColor;
+    border: 4px solid rgba(0,0,0,0.8);
 }
 
 //font
