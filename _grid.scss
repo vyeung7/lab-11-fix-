@@ -1,4 +1,4 @@
-@import "variables";
+$bgcol: linen;
 
 
 .grid-container{
@@ -60,7 +60,7 @@
 .grid{
     display: grid;
     grid-template-columns: auto auto;
-    background-color: $bgcol + black;
+    background-color: $bgcol + #101010;
     padding: 10px;
     grid-gap: 10px;
 }}
@@ -70,15 +70,15 @@
 .grid{
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: $bgcol + black;
+    background-color: $bgcol + #202020;
     padding: 10px;
     grid-gap: 10px;
 }}
 
 //grid item format
-.grid-item{
-    background-color: $bgcol;
-    border: 4px solid rgba(0,0,0,0.8);
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px solid $gridcolor;
 }
 
 //font
