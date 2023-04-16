@@ -42,7 +42,8 @@
     background-color: linen;
     text-align: center;
     padding: 20px;
-    font-size: 30px;   
+    font-size: 30px; 
+    border: 4px soild rgba(0, 0, 0, 0.8)  
 }
 
 .n1{
