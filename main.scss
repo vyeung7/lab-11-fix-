@@ -1,1 +1,9 @@
-@import '_grid';
+@import "_grid";
+@import "variables";
+
+@include grid;
+/*formats grid item*/
+.grid-item{
+    background-color: $bgcol;
+    border: 4px solid rgba(0,0,0,0.8);
+ }
